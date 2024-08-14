@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 'docker-agent-1'
+            label 'docker-agent-2'
         }
     }
     triggers {

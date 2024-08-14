@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo "Building"
                 sh ''' 
-                pipx install fire
+                pip install fire
                 '''
             }
         }

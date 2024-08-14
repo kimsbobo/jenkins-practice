@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo "Building"
                 sh ''' 
-                pip install fire
+                apk add py3-fire
                 '''
             }
         }

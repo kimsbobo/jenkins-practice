@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building"
                 sh ''' 
-                pipx install -r requirements.txt 
+                pipx install fire
                 '''
             }
         }

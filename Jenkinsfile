@@ -9,7 +9,10 @@ pipeline {
             steps {
                 echo "Building"
                 sh ''' 
-                pip install fire
+                python3 -m venv /path/to/venv
+                . /path/to/venv/bin/activate
+                pip install mypackage
+                deactivate
                 '''
             }
         }

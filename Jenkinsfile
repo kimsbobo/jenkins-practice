@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building"
                 sh ''' 
-                pip install -r requirements.txt 
+                pipx install -r requirements.txt 
                 '''
             }
         }

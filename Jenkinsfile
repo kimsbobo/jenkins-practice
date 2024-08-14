@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building"
                 sh ''' 
-                echo "Building some stuff" 
+                pip install fire 
                 '''
             }
         }
@@ -20,7 +20,9 @@ pipeline {
             steps {
                 echo "Test"
                 sh ''' 
-                echo "Testing some stuff" 
+                python3 hellofire.py
+                python3 hellofire.py --name=Argie
+                python3 hellofire.py --name=Irish
                 '''
             }
         }

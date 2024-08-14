@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building"
                 sh ''' 
-                pip install -r fire 
+                pip install -r requirements.txt 
                 '''
             }
         }
